@@ -1,0 +1,28 @@
+@import "../../style/vars.scss";
+
+.userData {
+  padding: 30px;
+  width: 250px;
+  border: 0.5px solid rgb(135, 164, 135);
+  background-color: rgb(183, 204, 183);
+  border-radius: 20px;
+  @include flex(column, space-between, center);
+  gap: 15px;
+  span {
+    @include font(24px, 700, italic, rgb(24, 36, 24));
+  }
+  button {
+    @include font(20px, 400, normal, rgb(66, 65, 65));
+    cursor: pointer;
+    width: 200px;
+    padding: 15px;
+    transition: 0.5s;
+    border: 0.5px solid rgb(154, 154, 154);
+    background-color: rgba(154, 154, 154, 0.5);
+    &:hover {
+      transform: scale3d(1.08, 1.08, 1.08);
+      background-color: rgb(135, 164, 135);
+      @include font(20px, 400, normal, white);
+    }
+  }
+}

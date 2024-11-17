@@ -1,0 +1,36 @@
+@import "../../style/vars.scss";
+
+form {
+  width: 100%;
+  @include flex(column, space-between, center);
+  margin-bottom: 20px;
+  p {
+    @include font(24px, 700, normal, rgb(66, 65, 65));
+  }
+  .empty {
+    color: rgb(199, 70, 70);
+  }
+  .name,
+  .surname,
+  .birth {
+    width: 80%;
+    margin: auto;
+    input {
+      display: block;
+      width: 80%;
+      margin: auto;
+      padding: 10px;
+      @include font(20px, 400, normal, rgb(66, 65, 65));
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .birth {
+    @include flex(column, space-between, center);
+    gap: 10px;
+    label {
+      @include font(20px, 500, normal, rgb(66, 65, 65));
+    }
+  }
+}

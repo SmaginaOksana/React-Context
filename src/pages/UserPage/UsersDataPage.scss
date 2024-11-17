@@ -1,0 +1,10 @@
+@import "../../style/vars.scss";
+
+.users {
+  @include flex(row, space-between, center);
+  gap: 15px;
+  flex-wrap: wrap;
+}
+p {
+  @include font(24px, 700, normal, rgb(66, 65, 65));
+}
